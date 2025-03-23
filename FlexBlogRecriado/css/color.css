@@ -1,3 +1,5 @@
+/* Color CSS */
+/* Criando as variáveis de cor */
 :root {
     /* Header e Footer */
     --header-bg: #050505;
@@ -22,12 +24,16 @@
     --h2-color-02: #919191;
     --p-color: #7c7c7c;
 
+    /* Cores quando mudar o tema para escuro */
     body.dark-mode {
+        /* Cores de Fundo */
         --bg-color: #111111;
         --bg-color-02: #1f1f1f;
         --bg-color-03: #0e0e0e;
         --bg-color-04: #181818;
         --bg-color-05: #1f1f1f;
+
+        /* Cores de Texto */
         --h1-color: #f0f0f0;
         --h2-color: #b9b9b9;
         --h2-color-02: #757575;

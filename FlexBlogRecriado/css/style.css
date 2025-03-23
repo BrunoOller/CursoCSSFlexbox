@@ -1,7 +1,11 @@
+/* Style CSS */
+
+/* Super info/Informações que ficarão acima do Header */
 .superinfo-bg {
     background: var(--header-bg);
     color: #c2c2c2;
 
+    /* Conteúdo do Super info */
     & .superinfo {
         max-width: 960px;
         margin: 0 auto;
@@ -11,25 +15,29 @@
         padding-top: 5px;
         border-bottom: 1px solid #1a1a1a;
 
+        /* Adicionando margem aos textos(informativos) e o link(do telefone) */
         & p,
         a {
             margin: 0 10px 5px 10px;
         }
-    }
 
-    & a {
-        background-color: var(--color-pri);
-        box-shadow: 0 0 10px #000000;
-        border-radius: 4px;
-        padding: 1px 5px;
-        color: #1a1a1a;
-        font-weight: 600;
+        /* Telefone */
+        & a {
+            background-color: var(--color-pri);
+            box-shadow: 0 0 10px #000000;
+            border-radius: 4px;
+            padding: 1px 5px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
     }
 }
 
+/* Header/Cabeçalho */
 .menu-bg {
     background: var(--header-bg-02);
 
+    /* Conteúdo do Cabeçalho */
     & .menu {
         max-width: 960px;
         margin: 0 auto;
@@ -39,27 +47,32 @@
         justify-content: space-between;
         align-items: center;
 
-        & a {
-            color: #fcfcfc;
-
-            & span {
-                font-size: 1.15rem;
-                color: var(--color-pri);
-                text-shadow: 0 0 10px var(--color-pri);
-            }
-        }
-
+        /* Logo */
         & .menu-logo {
             font-size: 2.25em;
             font-weight: bold;
             margin: 0 10px;
+
+            /* Logo GamesDOT */
+            & a {
+                color: #fcfcfc;
+    
+                /* Texto pequeno que acompanha a Logo (com) */
+                & span {
+                    font-size: 1.15rem;
+                    color: var(--color-pri);
+                    text-shadow: 0 0 10px var(--color-pri);
+                }
+            }
         }
 
+        /* Navbar/Menu do Cabeçalho */
         & .menu-nav ul {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
 
+            /* Abas */
             & a {
                 text-transform: uppercase;
                 font-weight: bold;
@@ -69,6 +82,7 @@
                 color: #c3c3c3;
                 transition: all .35s ease-out;
 
+                /* Adicionando animação ao passar o mouse por cima */
                 &:hover {
                     background: #ffffff27;
                     color: #fcfcfc;
@@ -76,6 +90,7 @@
                 }
             }
 
+            /* Botão de trocar tema */
             & .btn-darkmode {
                 width: 1.25em;
                 height: 1.25em;
@@ -84,12 +99,14 @@
                 border-radius: 50%;
                 cursor: pointer;
 
+                /* Icone */
                 & img {
                     filter: invert(0.7);
                     transition: all .35s ease-out;
                     margin-top: 2px;
                 }
 
+                /* Adicionando animação ao passar o mouse por cima */
                 &:hover img {
                     filter: invert(1);
                     transition: all .35s ease-in;
@@ -99,6 +116,7 @@
     }
 }
 
+/* Seção de introdução */
 .introducao {
     font-size: 3em;
     line-height: 1;
@@ -107,6 +125,7 @@
     padding: 60px 10px;
 }
 
+/* Seção de Sobre */
 .sobre {
     border-top: 2px solid var(--color-pri);
     border-bottom: 2px solid var(--color-pri);
@@ -116,6 +135,7 @@
     display: flex;
     flex-wrap: wrap;
 
+    /* Parte dos textos do sobre */
     & .sobre-info {
         flex: 2 1 300px;
         margin: 0 10px;
@@ -133,6 +153,7 @@
         }
     }
 
+    /* Parte das imagens */
     & .sobre-img {
         flex: 1 1 160px;
         margin: 0 10px;
@@ -144,20 +165,24 @@
     }
 }
 
+/* Seção de Produtos */
 .produtos {
     max-width: 960px;
     margin: 60px auto;
 
+    /* Título */
     & h1 {
         font-size: 3em;
         margin: 0 10px 60px 10px;
     }
 
+    /* Container dos Produtos */
     & .produtos-container {
         display: flex;
         flex-wrap: wrap;
         align-items: end;
 
+        /* Produto */
         & .produtos-item {
             flex: 1 1 175px;
             margin: 10px;
@@ -172,21 +197,24 @@
                 padding: 60px 20px;
             }
 
+            /* Adicionando animação ao passar o mouse por cima */
             &:hover {
                 transform: translateY(-4%);
                 transition: all .35s ease-in;
                 border-top: 8px solid var(--color-sec);
             }
 
+            /* Adicionando animação ao passar o mouse por cima do produtos item e afetar diretamente o span */
             &:hover span {
                 color: var(--color-sec);
                 transition: all .35s ease-in;
             }
         }
 
+        /* Detalhes verdes */
         & .verde {
             border-top: 8px solid var(--color-pri);
-            
+
             & span {
                 color: var(--color-pri);
                 transition: all .35s ease-out;
@@ -195,12 +223,14 @@
     }
 }
 
+/* Seção de Preços de Assinatura */
 .preco {
     background: var(--bg-color-05);
     padding: 60px;
     display: flex;
     flex-wrap: wrap;
 
+    /* Item */
     & .preco-item {
         flex: 1;
         border: 4px solid var(--p-color);
@@ -228,12 +258,14 @@
             border-bottom: 4px solid var(--p-color);
         }
 
+        /* Texto menor que fica em cima */
         & sup {
             color: var(--color-sec);
             text-shadow: 0 0 10px var(--color-pri);
             font-size: 1.5rem;
         }
 
+        /* Lista de vantagens */
         & ul {
             max-width: 300px;
             margin: 20px auto;
@@ -249,6 +281,7 @@
                 margin-bottom: 15px;
             }
 
+            /* Pontinhos da lista na parte da frente */
             & li::after {
                 content: '';
                 display: block;
@@ -259,7 +292,7 @@
             }
         }
 
-
+        /* Botão de comprar */
         & a {
             max-width: 300px;
             display: block;
@@ -274,6 +307,7 @@
             text-align: center;
             transition: all .35s ease-out;
 
+            /* Adicionando animação ao passar o mouse por cima */
             &:hover {
                 background-color: var(--color-pri);
                 color: var(--header-bg-02);
@@ -283,12 +317,14 @@
     }
 }
 
+/* Seção de Qualidade */
 .qualidade {
     max-width: 960px;
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
 
+    /* Item */
     & .qualidade-item {
         flex: 1 1 300px;
         margin: 20px 10px;
@@ -298,6 +334,7 @@
             color: var(--h1-color);
             margin-bottom: 20px;
 
+            /* Barra vertical colorida que fica atrás do título */
             &::before {
                 content: '';
                 display: inline-block;
@@ -307,14 +344,17 @@
             }
         }
 
+        /* Aplicando uma cor para o primeiro h2 que vai se repetir a cada 3 */
         &:nth-of-type(3n+1) h2::before {
             background: var(--color-pri);
         }
 
+        /* Aplicando uma cor para o segundo h2 que vai se repetir a cada 3 */
         &:nth-of-type(3n+2) h2::before {
             background: var(--color-sec);
         }
 
+        /* Aplicando uma cor para o terceiro h2 que vai se repetir a cada 3 */
         &:nth-of-type(3n+3) h2::before {
             background: var(--color-ter);
         }
@@ -327,12 +367,14 @@
     }
 }
 
+/* Seção do Newsletter */
 .newsletter {
     background: var(--bg-color-03);
     padding: 60px calc((100% - 960px) / 2);
     display: flex;
     flex-wrap: wrap;
 
+    /* Newsletter textos */
     & .newsletter-info {
         flex: 1 1 240px;
         margin: 0 10px;
@@ -351,6 +393,7 @@
         }
     }
 
+    /* Formulário */
     & .newsletter-form {
         flex: 2 1 260px;
         margin: 0 10px;
@@ -358,6 +401,7 @@
         display: flex;
         flex-wrap: wrap;
 
+        /* Input para escrever o email */
         & input {
             flex: 3 1 200px;
             font-size: 1.25em;
@@ -370,6 +414,7 @@
             border-radius: 0px;
         }
 
+        /* Botão de assinar */
         & button {
             flex: 1 1 200px;
             font-family: 'Poppins', sans-serif;
@@ -386,6 +431,7 @@
     }
 }
 
+/* Footer/Rodapé do site */
 .footer {
     display: flex;
     background: var(--header-bg);
